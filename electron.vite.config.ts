@@ -15,14 +15,14 @@ export default defineConfig({
       postcss: {
         plugins: [
           tailwindcss({
-            config: './src/renderer/tailwind.config.js'
+            config: 'tailwind.config.js'
           })
         ]
       }
     },
     resolve: {
       alias: {
-        '@renderer': resolve('src/renderer/src')
+        '@': resolve('src/renderer/src')
       }
     },
     plugins: [react()]
