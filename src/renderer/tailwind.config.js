@@ -4,7 +4,11 @@ module.exports = {
     './src/renderer/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'background': '#f9fbfd',
+      }
+    },
   },
   plugins: [],
 }
